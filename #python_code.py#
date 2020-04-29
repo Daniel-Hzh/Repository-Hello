@@ -1,0 +1,112 @@
+Last login: Wed Apr 29 19:41:16 on ttys000
+(base) HZH-Air:~ huangzhihong$ ssh-keygen -t rsa -b 4096 -C "42741865@qq.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/huangzhihong/.ssh/id_rsa): 
+Created directory '/Users/huangzhihong/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/huangzhihong/.ssh/id_rsa.
+Your public key has been saved in /Users/huangzhihong/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:RoLf6E+eKfQw4oX8h+ybPo2dBeJ0ZvyChTjDbTnZuu4 42741865@qq.com
+The key's randomart image is:
++---[RSA 4096]----+
+|                 |
+|     .           |
+|   ..o.*.        |
+|    =.X=O        |
+|   . BoXSo       |
+|    +.O.. o      |
+|   . *.X.+       |
+|    . O=*o       |
+|     =E==        |
++----[SHA256]-----+
+(base) HZH-Air:~ huangzhihong$ cd ~/.ssh
+(base) HZH-Air:.ssh huangzhihong$ ls
+id_rsa		id_rsa.pub
+(base) HZH-Air:.ssh huangzhihong$ eval "$(ssh-agent -s)"
+Agent pid 696
+(base) HZH-Air:.ssh huangzhihong$ ls
+id_rsa		id_rsa.pub
+(base) HZH-Air:.ssh huangzhihong$ ssh-add -K ~/.ssh/id_rsa
+Passphrase stored in keychain: /Users/huangzhihong/.ssh/id_rsa
+Identity added: /Users/huangzhihong/.ssh/id_rsa (/Users/huangzhihong/.ssh/id_rsa)
+(base) HZH-Air:.ssh huangzhihong$ pbcopy < ~/.ssh/id_rsa.pub
+(base) HZH-Air:.ssh huangzhihong$ mkdir ~/Desktop/projects
+(base) HZH-Air:.ssh huangzhihong$ cd ~/Desktop/projects
+(base) HZH-Air:projects huangzhihong$ git clone git@github.com:Daniel-Hzh/Mac-Second.git
+Cloning into 'Mac-Second'...
+/Users/huangzhihong/.ssh/config: line 2: Bad configuration option: addkeystoagent
+/Users/huangzhihong/.ssh/config: line 3: Bad configuration option: usekeychain
+/Users/huangzhihong/.ssh/config: terminating, 2 bad configuration options
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) HZH-Air:projects huangzhihong$ git clone git@github.com:Daniel-Hzh/Mac-Second.git
+Cloning into 'Mac-Second'...
+/Users/huangzhihong/.ssh/config: line 2: Bad configuration option: addkeystoagent
+/Users/huangzhihong/.ssh/config: line 3: Bad configuration option: usekeychain
+/Users/huangzhihong/.ssh/config: terminating, 2 bad configuration options
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) HZH-Air:projects huangzhihong$ ls
+(base) HZH-Air:projects huangzhihong$ git clone git@github.com:Daniel-Hzh/Mac-Second.git
+Cloning into 'Mac-Second'...
+/Users/huangzhihong/.ssh/config: line 2: Bad configuration option: addkeystoagent
+/Users/huangzhihong/.ssh/config: line 3: Bad configuration option: usekeychain
+/Users/huangzhihong/.ssh/config: terminating, 2 bad configuration options
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) HZH-Air:projects huangzhihong$ git clone git@github.com:Daniel-Hzh/Repository-Hello.git
+Cloning into 'Repository-Hello'...
+/Users/huangzhihong/.ssh/config: line 2: Bad configuration option: addkeystoagent
+/Users/huangzhihong/.ssh/config: line 3: Bad configuration option: usekeychain
+/Users/huangzhihong/.ssh/config: terminating, 2 bad configuration options
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) HZH-Air:projects huangzhihong$ 
+(base) HZH-Air:projects huangzhihong$ git clone https://github.com/Daniel-Hzh/Repository-Hello.git
+Cloning into 'Repository-Hello'...
+warning: You appear to have cloned an empty repository.
+(base) HZH-Air:projects huangzhihong$ cd ~/Desktop/projects/github-example
+-bash: cd: /Users/huangzhihong/Desktop/projects/github-example: No such file or directory
+(base) HZH-Air:projects huangzhihong$ print("Hello Github!")
+-bash: !": event not found
+(base) HZH-Air:projects huangzhihong$ cd ~/Desktop/projects/Repository-Hello
+(base) HZH-Air:Repository-Hello huangzhihong$ print("Hello Github!")
+-bash: !": event not found
+(base) HZH-Air:Repository-Hello huangzhihong$ print("Hello")
+-bash: syntax error near unexpected token `"Hello"'
+(base) HZH-Air:Repository-Hello huangzhihong$ emacs python_code.py
+
+print("Hello Github!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-uuu:**-F1  python_code.py   All L1     (Python)---------------------------
+I-search: 
